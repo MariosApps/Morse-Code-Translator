@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    border-bottom: 2px solid red;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#alphabet {
+    width: 100%;
+    height: auto;
+}
+
+.letter {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.clear-btn,
+.space-btn {
+    width: 40%;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.letter,
+.clear-btn,
+.space-btn {
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 10px;
+    border: 2px solid #9a9a9a;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.letter:hover,
+.clear-btn:hover,
+.space-btn:hover {
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.translation-title {
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#translation-list,
+#translation-text {
+    font-size: 50px;
+    width: 100%;
+    min-height: 70px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#translation-list li,
+#translation-text li {
+    display: inline-block;
+    text-decoration: none;
+}
