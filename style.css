@@ -40,8 +40,9 @@ h1 {
 }
 
 .clear-btn,
-.space-btn {
-    width: 40%;
+.space-btn,
+.bs-btn {
+    width: 30%;
     height: 60px;
     margin-top: 5px;
     margin-bottom: 50px;
@@ -49,7 +50,8 @@ h1 {
 
 .letter,
 .clear-btn,
-.space-btn {
+.space-btn,
+.bs-btn {
     display: inline-block;
     font-size: 30px;
     padding-top: 10px;
@@ -60,7 +62,8 @@ h1 {
 
 .letter:hover,
 .clear-btn:hover,
-.space-btn:hover {
+.space-btn:hover,
+.bs-btn:hover {
     border: 2px solid red;
     cursor: pointer;
 }
