@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morse Code Translator</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="media.css" type="text/css">
+
 
 </head>
 
@@ -21,14 +24,17 @@
         <div class="clear-btn">Clear</div>
         <div class="space-btn">Space</div>
         <div class="bs-btn"><i class="fas fa-arrow-left"></i></div>
-        <div>
-            <p class="translation-title">Translated Text</p>
-            <ul id="translation-text"></ul>
+        <div class="text">
+            <div>
+                <p class="translation-title">Translated Text</p>
+                <ul id="translation-text"></ul>
+            </div>
+            <div>
+                <p class="translation-title">Translation</p>
+                <ul id="translation-list"></ul>
+            </div>
         </div>
-        <div>
-            <p class="translation-title">Translation</p>
-            <ul id="translation-list"></ul>
-        </div>
+
 
     </div>
 

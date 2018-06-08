@@ -16,10 +16,11 @@ function setUpLetters() {
     document.getElementById('alphabet').innerHTML = alphabetDiv;
 }
 
+var ulSigns = document.getElementById("translation-text");
+var ulMorse = document.getElementById("translation-list");
+
 
 function trans(nr) {
-    var ulSigns = document.getElementById("translation-text");
-    var ulMorse = document.getElementById("translation-list");
     var liSigns = document.createElement("li");
     var liMorse = document.createElement("li");
     liMorse.appendChild(document.createTextNode('\u00A0' + morse[nr] + '\u00A0'));
@@ -30,15 +31,13 @@ function trans(nr) {
 
 
 document.querySelector('.clear-btn').addEventListener('click', function () {
-    document.getElementById('translation-list').innerHTML = '';
-    document.getElementById('translation-text').innerHTML = '';
+    ulMorse.innerHTML = '';
+    ulSigns.innerHTML = '';
 });
 
 
 document.querySelector('.space-btn').addEventListener('click', function () {
-    var ulSigns = document.getElementById("translation-text");
-    var liSpace = document.createElement("li");
-    var ulMorse = document.getElementById("translation-list");
+    var liSpace = document.createElement("li")
     var liSeparator = document.createElement("li");
     liSpace.appendChild(document.createTextNode('\u00A0' + '\u00A0'));
     liSeparator.appendChild(document.createTextNode('\\'));
@@ -47,8 +46,6 @@ document.querySelector('.space-btn').addEventListener('click', function () {
 });
 
 document.querySelector('.bs-btn').addEventListener('click', function () {
-    var removeSign = document.getElementById('translation-text');
-    var removeMorse = document.getElementById('translation-list');
-    removeSign.removeChild(removeSign.lastChild);
-    removeMorse.removeChild(removeMorse.lastChild);
+    ulSigns.removeChild(ulSigns.lastChild);
+    ulMorse.removeChild(ulMorse.lastChild);
 });

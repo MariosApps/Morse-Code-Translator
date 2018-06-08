@@ -23,6 +23,8 @@ h1 {
     letter-spacing: 7px;
 }
 
+.title { padding: 0 5%; }
+
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -61,10 +63,14 @@ h1 {
 }
 
 .letter:hover,
+.letter:active,
 .clear-btn:hover,
+.clear-btn:active,
 .space-btn:hover,
-.bs-btn:hover {
-    border: 2px solid red;
+.space-btn:active,
+.bs-btn:hover,
+.bs-btn:active {
+    border: 2px solid #ff0000;
     cursor: pointer;
 }
 
@@ -74,14 +80,17 @@ h1 {
     text-transform: uppercase;
 }
 
+.text { padding: 0 4%; }
+
 #translation-list,
 #translation-text {
+    padding: 0 4%;
     font-size: 50px;
     width: 100%;
     min-height: 70px;
     margin-top: 0;
     margin-bottom: 50px;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     border-radius: 10px;
 }
 
