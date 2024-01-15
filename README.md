@@ -1,2 +1,2 @@
 # Morse Code Translator
-<h3><a href="https://pampuchskrytozerca.github.io/Morse-Code-Translator/">DEMO</></h3>
+<h3><a href="https://MariosApps.github.io/Morse-Code-Translator/">DEMO</></h3>
